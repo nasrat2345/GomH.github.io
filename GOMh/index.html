@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГомельХимТорг | Металлопрокат и химическая продукция</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+    <!-- Строка поиска -->
+    <body>
+        <!-- Строка поиска -->
+        <div class="search-bar">
+            <div class="container">
+                <div class="search-container">
+                    <input type="text" placeholder="Поиск продукции..." id="search-input">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <header>
+            <div class="container header-content">
+                <div class="logo">ГОМЕЛЬ<span>ХИМТОРГ</span></div>
+                
+                <div class="quick-links">
+                    <a href="#" class="quick-link" id="news-btn"><i class="far fa-newspaper"></i> Новости</a>
+                    <a href="#" class="quick-link" id="game-btn"><i class="fas fa-flask"></i> Химическая игра</a>
+                    <button class="auth-btn" id="auth-btn"><i class="fas fa-user"></i> Войти</button>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>info@gomelhimtorg.by</span>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-item">
+                        <span>+375 (232) 31-43-31</span>
+                        <i class="fas fa-phone-alt"></i>
+                        <span class="contact-description">Отдел маркетинга</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main id="main-content">
+            <section class="hero">
+                <div class="container hero-content">
+                    <h1>Прием изношенных шин, отходов металлолома и аккумуляторов</h1>
+                    <p>Телефон: 80232 31 64 03, 31 64</p>
+                    <div>
+                        <a href="#catalog" class="btn" id="catalog-btn">Каталог</a>
+                        <a href="#services-page" class="btn" id="services-btn">Услуги</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="services">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Наши направления</h2>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-img" style="background-image: url('https://epolymer.ru/files/styles/900/public/image/onpz_yubilei.jpg?itok=lRFaFory');"></div>
+                            <div class="service-content">
+                                <h3>Химическая продукция</h3>
+                                <p>Широкий ассортимент химической продукции для различных отраслей промышленности.</p>
+                                <a href="#chemical" class="btn catalog-link" data-category="chemical">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae');"></div>
+                            <div class="service-content">
+                                <h3>Удобрения</h3>
+                                <p>Качественные удобрения для сельского хозяйства и садоводства.</p>
+                                <a href="#fertilizers" class="btn catalog-link" data-category="fertilizers">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1519861531473-9200262188bf');"></div>
+                            <div class="service-content">
+                                <h3>Вспомогательные материалы</h3>
+                                <p>Специальные материалы для различных промышленных нужд.</p>
+                                <a href="#materials" class="btn catalog-link" data-category="materials">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cta">
+                <div class="container">
+                    <h2>Готовы к сотрудничеству?</h2>
+                    <p>Свяжитесь с нами для получения дополнительной информации о нашей продукции и услугах.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact-page" class="btn" id="contact-btn">Контакты</a>
+                        <a href="#catalog" class="btn btn-secondary" id="catalog-btn-2">Каталог</a>
+                        <a href="#services-page" class="btn btn-secondary" id="services-btn-2">Услуги</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Страница каталога -->
+        <section class="catalog-page" id="catalog">
+            <div class="container">
+                <a href="#" class="back-btn" id="back-to-main"><i class="fas fa-arrow-left"></i>Назад</a>
+                
+                <div class="section-title">
+                    <h2>Каталог продукции</h2>
+                </div>
+                
+                <div class="catalog-nav">
+                    <a href="#chemical" class="catalog-nav-link active" data-category="chemical">Химическая продукция</a>
+                    <a href="#fertilizers" class="catalog-nav-link" data-category="fertilizers">Удобрения</a>
+                    <a href="#materials" class="catalog-nav-link" data-category="materials">Вспомогательные материалы</a>
+                </div>
+                
+                <div class="products-grid" id="chemical-products">
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1581094271901-8022df4466f9');"></div>
+                        <div class="product-content">
+                            <h3>Монофосфат калия (100 гр., 300 гр, 500 гр)</h3>
+                            <p>Высококачественное удобрение для различных культур</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1581093052811-8d9d8a9b7c0a');"></div>
+                        <div class="product-content">
+                            <h3>Нитрат калия (Калиевая селитра) (500 гр.)</h3>
+                            <p>Эффективное азотно-калийное удобрение</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1581093052811-8d9d8a9b7c0a');"></div>
+                        <div class="product-content">
+                            <h3>Сульфат магния</h3>
+                            <p>Марка Элемента мелкокристаллический (100 гр, 500 гр)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="fertilizers-products" style="display: none;">
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1581093052811-8d9d8a9b7c0a');"></div>
+                        <div class="product-content">
+                            <h3>Комплексное удобрение NPK</h3>
+                            <p>Сбалансированный состав для всех видов растений</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="materials-products" style="display: none;">
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1581093052811-8d9d8a9b7c0a');"></div>
+                        <div class="product-content">
+                            <h3>Техническая сода</h3>
+                            <p>Для промышленного применения</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Страница услуг -->
+        <section class="services-page" id="services-page">
+            <div class="container">
+                <a href="#" class="back-btn" id="back-to-main-services"><i class="fas fa-arrow-left"></i>Назад</a>
+                
+                <div class="section-title">
+                    <h2>Наши услуги</h2>
+                    <p>Профессиональные решения для вашего бизнеса</p>
+                </div>
+                
+                <!-- Аренда склада -->
+                <div class="service-section">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <h2>Аренда склада (ответственное хранение) металлопродукции</h2>
+                    <p>ОАО «Гомельхимторг» оказывает профессиональные складские услуги</p>
+                    <p>Наш склад - это открытая площадка, оснащенная охраной, системой видеонаблюдения и погрузочно-разгрузочным оборудованием. Мы обеспечиваем безопасность и сохранность ваших товаров на всех этапах логистического процесса.</p>
+                    
+                    <h3>НАШИ ПРЕИМУЩЕСТВА</h3>
+                    <ul>
+                        <li>Бетонированная открытая площадка в промышленной зоне г. Гомеля</li>
+                        <li>Автомобильные и железнодорожные подъездные пути, КПП</li>
+                        <li>Мостовые краны грузоподъемностью до 20 тонн</li>
+                        <li>Автомобильные и крановые весы для точного взвешивания</li>
+                        <li>Специальные стойки для хранения металлопродукции</li>
+                        <li>Полный комплекс услуг по организации хранения, приемки и выдачи товаров</li>
+                        <li>Все виды погрузочно-разгрузочных работ</li>
+                        <li>Оформление всех необходимых сопроводительных документов</li>
+                        <li>Гибкая система ценообразования и индивидуальный подход к каждому клиенту</li>
+                        <li>Гарантия высокого качества предоставляемых услуг</li>
+                    </ul>
+                    
+                    <div class="service-contact">
+                        <p><strong>СВЯЖИТЕСЬ с нами и узнайте наши условия и расценки!</strong></p>
+                        <p><i class="fas fa-phone"></i> Тел.: +375 232 31-43-59</p>
+                        <p><i class="fas fa-mobile-alt"></i> Моб.: +375 44 734-33-85</p>
+                        <p><i class="fas fa-envelope"></i> Email: sklad@gomelhimtorg.by</p>
+                    </div>
+                </div>
+                
+                <!-- Резка металла -->
+                <div class="service-section">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581093052811-8d9d8a9b7c0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <h2>Резка металла</h2>
+                    <p>ОАО «Гомельхимторг» производит точную резку металла по размерам заказчика на современном оборудовании.</p>
+                    <p>Стоимость выполнения работ составляет <strong>0,41 руб. за один рез</strong>. Мы работаем с различными видами металлопроката, включая:</p>
+                    <ul>
+                        <li>Листовой металл</li>
+                        <li>Арматуру</li>
+                        <li>Трубы различного диаметра</li>
+                        <li>Уголки и швеллеры</li>
+                        <li>Профильные трубы</li>
+                    </ul>
+                    
+                    <div class="service-contact">
+                        <p><strong>Для уточнения деталей и расчета стоимости:</strong></p>
+                        <p><i class="fas fa-phone"></i> Тел.: +375 232 31-43-82</p>
+                        <p><i class="fas fa-mobile-alt"></i> Моб.: +375 44 734-33-85</p>
+                    </div>
+                </div>
+                
+                <!-- Сбор вторичных материалов -->
+                <div class="service-section">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <h2>Сбор вторичных материалов</h2>
+                    <p>Мы осуществляем профессиональный сбор и переработку вторичных материалов с соблюдением всех экологических норм.</p>
+                    <p>Наши услуги включают:</p>
+                    <ul>
+                        <li>Прием и переработку металлолома всех видов</li>
+                        <li>Сбор и утилизацию полимерных отходов</li>
+                        <li>Прием отработанных аккумуляторов</li>
+                        <li>Утилизацию изношенных шин</li>
+                        <li>Вывоз и переработку промышленных отходов</li>
+                    </ul>
+                    <p>Мы предлагаем:</p>
+                    <ul>
+                        <li>Собственный парк специализированной техники</li>
+                        <li>Опытных специалистов с необходимыми допусками</li>
+                        <li>Полный комплект разрешительной документации</li>
+                        <li>Конкурентные цены на принимаемые материалы</li>
+                        <li>Возможность заключения долгосрочных договоров</li>
+                    </ul>
+                    
+                    <div class="service-contact">
+                        <p><strong>Контакты отдела приема вторичных материалов:</strong></p>
+                        <p><i class="fas fa-phone"></i> Тел.: +375 232 31-64-03</p>
+                        <p><i class="fas fa-clock"></i> Режим работы: Пн-Пт с 8:00 до 17:00</p>
+                    </div>
+                </div>
+                
+                <!-- Автотранспортные услуги -->
+                <div class="service-section">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581093057305-25adfc6d058e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <h2>Автотранспортные услуги</h2>
+                    <p>Предоставляем полный комплекс транспортных услуг для перевозки различных грузов по Беларуси и за ее пределами.</p>
+                    <p>Наши преимущества:</p>
+                    <ul>
+                        <li>Собственный автопарк с различными видами грузового транспорта</li>
+                        <li>Опытные водители с большим стажем работы</li>
+                        <li>Гибкая система тарифов и скидок для постоянных клиентов</li>
+                        <li>Страхование грузов на время перевозки</li>
+                        <li>Таможенное оформление для международных перевозок</li>
+                        <li>Система GPS-мониторинга для контроля перемещения грузов</li>
+                    </ul>
+                    
+                    <div class="service-contact">
+                        <p><strong>Отдел транспортных услуг:</strong></p>
+                        <p><i class="fas fa-phone"></i> Тел.: +375 232 31-43-56</p>
+                        <p><i class="fas fa-envelope"></i> Email: transport@gomelhimtorg.by</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Страница контактов -->
+        <section class="contact-page" id="contact-page">
+            <div class="container">
+                <a href="#" class="back-btn" id="back-to-main-contacts"><i class="fas fa-arrow-left"></i>Назад</a>
+                
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> > Контакты
+                </div>
+                
+                <h1>КОНТАКТЫ</h1>
+                
+                <div class="contact-columns">
+                    <div>
+                        <div class="contact-block">
+                            <h3>Фактический адрес:</h3>
+                            <p>Республика Беларусь, г.Гомель, ул.Могилевская, 20</p>
+                            <p>Республика Беларусь, г.Гомель, проезд Энергостроителей, 8</p>
+                        </div>
+                        
+                        <div class="contact-block">
+                            <h3>Юридический и почтовый адрес:</h3>
+                            <p>246035, Республика Беларусь, г.Гомель, ул.Могилевская, 20</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="contact-block">
+                            <h3>Контактные телефоны:</h3>
+                            <p>Тел./факс: +375 232 31 42 56</p>
+                            <p>+375 232 91 69 67</p>
+                        </div>
+                        
+                        <div class="contact-block">
+                            <h3>Электронная почта:</h3>
+                            <p><a href="mailto:info@gomelhimtorg.by">info@gomelhimtorg.by</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Схема проезда:</h3>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        [Здесь будет карта с Яндекс.Картами]
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Есть вопросы? Напишите, мы постараемся вам помочь</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Ваше имя или название организации</label>
+                            <input type="text" id="name" placeholder="Введите ваше имя или название организации">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" placeholder="Введите ваш телефон">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Введите ваш email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" placeholder="Введите ваше сообщение"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Модальное окно новостей -->
+        <div class="news-modal" id="news-modal">
+            <div class="news-container">
+                <div class="news-header">
+                    <h2 class="news-title"><i class="far fa-newspaper"></i> Новости компании</h2>
+                    <button class="close-news" id="close-news">&times;</button>
+                </div>
+                
+                <div class="news-item">
+                    <h3>Открытие нового склада в Гомеле</h3>
+                    <p class="news-date">15 мая 2023</p>
+                    <p>Мы рады сообщить об открытии нового современного склада площадью 5000 кв.м. в промышленной зоне Гомеля. Склад оснащен всем необходимым оборудованием для хранения различных видов продукции.</p>
+                </div>
+                
+                <div class="news-item">
+                    <h3>Новые услуги по резке металла</h3>
+                    <p class="news-date">3 апреля 2023</p>
+                    <p>Теперь мы предлагаем услуги по точной резке металла по размерам заказчика. В нашем распоряжении современное оборудование, позволяющее выполнять работы любой сложности.</p>
+                </div>
+                
+                <div class="news-item">
+                    <h3>Специальные условия для постоянных клиентов</h3>
+                    <p class="news-date">20 марта 2023</p>
+                    <p>Для наших постоянных клиентов мы разработали специальную программу лояльности, включающую скидки, приоритетное обслуживание и индивидуальные условия сотрудничества.</p>
+                </div>
+                
+                <div class="news-item">
+                    <h3>Расширение ассортимента химической продукции</h3>
+                    <p class="news-date">5 февраля 2023</p>
+                    <p>Мы значительно расширили ассортимент предлагаемой химической продукции. Теперь в нашем каталоге представлено более 200 наименований товаров для различных отраслей промышленности.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Модальное окно мини-игры -->
+        <div class="game-modal" id="game-modal">
+            <div class="game-container">
+                <div class="game-header">
+                    <h2 class="game-title"><i class="fas fa-flask"></i> Химическая лаборатория</h2>
+                    <button class="close-game" id="close-game">&times;</button>
+                </div>
+                
+                <div class="game-info">
+                    <p>Соберите 3 одинаковых химических элемента, чтобы получить реакцию. Нажмите на элементы, чтобы собрать их в колбу.</p>
+                    <p>Собрано: <span id="score">0</span> реакций</p>
+                </div>
+                
+                <div class="game-area" id="game-area">
+                    <div class="chemical-item" data-element="H">H</div>
+                    <div class="chemical-item" data-element="O">O</div>
+                    <div class="chemical-item" data-element="C">C</div>
+                    <div class="chemical-item" data-element="N">N</div>
+                    <div class="chemical-item" data-element="Na">Na</div>
+                    <div class="chemical-item" data-element="Cl">Cl</div>
+                    <div class="chemical-item" data-element="Fe">Fe</div>
+                    <div class="chemical-item" data-element="Cu">Cu</div>
+                </div>
+                
+                <div class="game-controls">
+                    <button class="game-btn" id="restart-game">Начать заново</button>
+                    <button class="game-btn" id="close-game-btn">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>Контакты</h3>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> info@gomelhimtorg.by</li>
+                            <li><i class="fas fa-phone-alt"></i> +375 (232) 31-43-31 (Отдел маркетинга)</li>
+                            <li><i class="fas fa-phone-alt"></i> +375 (232) 91-61-77 (Химическая продукция)</li>
+                            <li><i class="fas fa-phone-alt"></i> +375 (232) 31-64-03 (Прием отходов)</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Продукция</h3>
+                        <ul>
+                            <li><a href="#chemical" class="catalog-link" data-category="chemical">Химическая продукция</a></li>
+                            <li><a href="#fertilizers" class="catalog-link" data-category="fertilizers">Удобрения</a></li>
+                            <li><a href="#materials" class="catalog-link" data-category="materials">Вспомогательные материалы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Услуги</h3>
+                        <ul>
+                            <li>
+                                <a href="#services-page" class="service-link" data-service="warehouse">
+                                    <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                                    Аренда склада
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services-page" class="service-link" data-service="cutting">
+                                    <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1581093052811-8d9d8a9b7c0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                                    Резка металлов
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services-page" class="service-link" data-service="recycling">
+                                    <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                                    Сбор вторичных материалов
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services-page" class="service-link" data-service="transport">
+                                    <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1581093057305-25adfc6d058e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                                    Автотранспортные услуги
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 ГОМЕЛЬХИМТОРГ. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="auth-modal" id="auth-modal">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <h2 class="auth-title">Авторизация</h2>
+                    <button class="close-auth" id="close-auth">&times;</button>
+                </div>
+                
+                <div class="auth-tabs">
+                    <div class="auth-tab active" data-tab="login">Вход</div>
+                    <div class="auth-tab" data-tab="register">Регистрация</div>
+                </div>
+                
+                <form class="auth-form active" id="login-form">
+                    <div class="auth-form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    
+                    <div class="auth-form-group">
+                        <label for="login-password">Пароль</label>
+                        <input type="password" id="login-password" required>
+                        <div class="auth-error" id="login-error">Неверный email или пароль</div>
+                    </div>
+                    
+                    <button type="submit" class="auth-submit-btn">Войти</button>
+                    
+                    <div class="auth-footer">
+                        <a href="#" id="forgot-password">Забыли пароль?</a>
+                    </div>
+                </form>
+                
+                <form class="auth-form" id="register-form">
+                    <div class="auth-form-group">
+                        <label for="register-name">Имя</label>
+                        <input type="text" id="register-name" required>
+                    </div>
+                    
+                    <div class="auth-form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    
+                    <div class="auth-form-group">
+                        <label for="register-password">Пароль</label>
+                        <input type="password" id="register-password" required>
+                        <div class="auth-error" id="register-error">Пароль должен содержать минимум 6 символов</div>
+                    </div>
+                    
+                    <div class="auth-form-group">
+                        <label for="register-confirm">Подтвердите пароль</label>
+                        <input type="password" id="register-confirm" required>
+                    </div>
+                    
+                    <button type="submit" class="auth-submit-btn">Зарегистрироваться</button>
+                    
+                    <div class="auth-footer">
+                        Уже есть аккаунт? <a href="#" id="switch-to-login">Войти</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Модальное окно для отзыва -->
+<div id="reviewModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Оставить отзыв</h2>
+      <form id="reviewForm">
+        <input type="hidden" id="reviewEntityType">
+        <input type="hidden" id="reviewEntityId">
+        <input type="hidden" id="reviewRating" name="rating" value="0">
+        <input type="text" id="reviewUserName" placeholder="Ваше имя" required>
+        <input type="email" id="reviewUserEmail" placeholder="Email" required>
+        <div class="rating">
+          <span>Оценка:</span>
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <textarea id="reviewContent" placeholder="Ваш отзыв" required></textarea>
+        <button type="submit">Отправить отзыв</button>
+      </form>
+    </div>
+  </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>

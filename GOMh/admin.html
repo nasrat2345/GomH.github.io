@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Админ-панель</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="admin-container">
+    <h1>Админ-панель</h1>
+    
+    <div class="admin-section">
+      <h2>Добавить товар</h2>
+      <form id="addProductForm">
+        <input type="text" id="productName" placeholder="Название" required>
+        <textarea id="productDescription" placeholder="Описание"></textarea>
+        <input type="number" id="productPrice" placeholder="Цена" required>
+        <input type="number" id="productStock" placeholder="Количество" required>
+        <input type="file" id="productImage" accept="image/*">
+        <button type="submit">Добавить</button>
+      </form>
+    </div>
+    
+    <div class="admin-section">
+      <h2>Новые заявки</h2>
+      <div id="ordersList"></div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
